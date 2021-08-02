@@ -6,16 +6,7 @@ ddb = boto3.client("dynamodb")
 translate = boto3.client("translate")
 
 def handler(event, context):
-    try:
-        data = translate.translate_text(
-            SourceLanguageCode="auto",
-            TargetLanguageCode="en",
-            Text="Hola"
-        )
-        print(data)
-    except BaseException as e:
-        print(e)
-        raise(e)
+        
         try:
             data = ddb.scan(
                 TableName="KChineseAnimal"

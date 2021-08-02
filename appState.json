@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "kawspy.py",
         "cursor": {
-          "lineNumber": 47,
-          "column": 29
+          "lineNumber": 10,
+          "column": 9
         },
         "config": {
           "runtime": "python3.8",
@@ -46,7 +46,16 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1627910785264
+        "lastUpdated": 1627912181939,
+        "testCases": {
+          "b10d5f48-858d-472f-b6a7-1d09fe39ec5c": {
+            "id": "b10d5f48-858d-472f-b6a7-1d09fe39ec5c",
+            "name": "Test event",
+            "functionId": "ae8a7a56-1974-4b27-b7bb-92cea84dc1a1",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       },
       "60b4850b-dee8-4ca6-a9d2-b63803e8b038": {
         "id": "60b4850b-dee8-4ca6-a9d2-b63803e8b038",
@@ -81,8 +90,8 @@
         "isRemovable": true,
         "filePath": "ksubi/lamdainsub.py",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 23,
+          "column": 18
         },
         "config": {
           "runtime": "python3.8",
@@ -98,7 +107,23 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1627911416241
+        "lastUpdated": 1627912180205,
+        "testCases": {
+          "16676458-be96-4991-bb84-6398ded06589": {
+            "id": "16676458-be96-4991-bb84-6398ded06589",
+            "name": "Test event",
+            "functionId": "a822a273-5288-48bb-920d-fe85d8fe907e",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          },
+          "970cf326-82dc-43fe-9993-d198477029cd": {
+            "id": "970cf326-82dc-43fe-9993-d198477029cd",
+            "name": "Test event",
+            "functionId": "a822a273-5288-48bb-920d-fe85d8fe907e",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
       },
       "74cea894-6bac-4df3-ab67-69d31da13983": {
         "id": "74cea894-6bac-4df3-ab67-69d31da13983",
@@ -115,7 +140,7 @@
       "ae8a7a56-1974-4b27-b7bb-92cea84dc1a1",
       "a822a273-5288-48bb-920d-fe85d8fe907e"
     ],
-    "currentFileId": "a822a273-5288-48bb-920d-fe85d8fe907e",
+    "currentFileId": "ae8a7a56-1974-4b27-b7bb-92cea84dc1a1",
     "resources": {
       "s3cloud9Ktest": {
         "name": "s3cloud9Ktest",
@@ -357,11 +382,11 @@
     "projectName": "kawspy",
     "projectDescription": "",
     "projectVersion": "1.0.0",
-    "projectRegion": "us-east-1",
+    "projectRegion": "us-east-2",
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1627911486023
+    "lastSave": 1627912362638
   },
   "VCS_STATE": {
     "provider": "GitHub",

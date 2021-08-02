@@ -20,5 +20,5 @@ def handler(event, context):
     
     def handler(event, context):
         return sb.lambda_handler()(event, context)
-    
+    print("Test")
     return {"message": "Successfully executed"}
