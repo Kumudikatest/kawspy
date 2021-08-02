@@ -172,45 +172,6 @@
           "queueARN": "arn:aws:sqs:us-east-1:318300609668:KTestSQS"
         }
       },
-      "translateResource": {
-        "name": "translateResource",
-        "type": "Translate",
-        "config": {}
-      },
-      "apigTestAPIDDBresourcecheckany": {
-        "name": "apigTestAPIDDBresourcecheckany",
-        "type": "API_GATEWAY",
-        "config": {
-          "apiType": 1,
-          "apiMode": 1,
-          "apiName": "TestAPI",
-          "apiId": "0itznun7w3",
-          "endpointType": "EDGE",
-          "rootResourceId": "h2lelj6j7k",
-          "existingResources": {
-            "/DDBresource": "0aenia",
-            "/DDBresource/check": "70q21i",
-            "/MyLambda": "98nqbj",
-            "/": "h2lelj6j7k",
-            "/newchange/test": "k6pdhn",
-            "/newchange": "q1ox7l",
-            "/testWithSlash": "q4m4g1",
-            "/testtwospeciallambda": "q4szm3",
-            "/testtwospecialkumutest": "wey3lk"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/DDBresource/check",
-          "resourceName": "DDBresource/check",
-          "resourceId": "70q21i",
-          "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "socks",
-          "stageDeploymentId": "s1zwmn",
-          "mode": 1
-        }
-      },
       "apigTestAPIDDBresourceget": {
         "name": "apigTestAPIDDBresourceget",
         "type": "API_GATEWAY",
@@ -382,11 +343,11 @@
     "projectName": "kawspy",
     "projectDescription": "",
     "projectVersion": "1.0.0",
-    "projectRegion": "us-east-2",
+    "projectRegion": "us-east-1",
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1627912362638
+    "lastSave": 1627912673487
   },
   "VCS_STATE": {
     "provider": "GitHub",
