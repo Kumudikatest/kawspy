@@ -1,0 +1,373 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "ae8a7a56-1974-4b27-b7bb-92cea84dc1a1": {
+        "id": "ae8a7a56-1974-4b27-b7bb-92cea84dc1a1",
+        "parent": null,
+        "name": "kawspy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kawspy.py",
+        "cursor": {
+          "lineNumber": 47,
+          "column": 29
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 25,
+          "memory": 128,
+          "layers": [],
+          "name": "kawspy"
+        },
+        "triggers": [
+          {
+            "resourceName": "s3cloud9Ktest",
+            "config": {
+              "type": "s3:ObjectCreated:*",
+              "keyPrefix": "",
+              "keySuffix": ""
+            }
+          },
+          {
+            "resourceName": "sqsKTestSQS",
+            "config": {
+              "BatchSize": "10"
+            }
+          },
+          {
+            "resourceName": "apigTestAPIDDBresourceget",
+            "config": {}
+          },
+          {
+            "resourceName": "apigTestAPIDDBresourcecheckget",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1627910785264
+      },
+      "60b4850b-dee8-4ca6-a9d2-b63803e8b038": {
+        "id": "60b4850b-dee8-4ca6-a9d2-b63803e8b038",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      },
+      "33d04280-26c7-4c6c-ad73-d58b0d057e45": {
+        "id": "33d04280-26c7-4c6c-ad73-d58b0d057e45",
+        "parent": null,
+        "name": "ksubi",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "a822a273-5288-48bb-920d-fe85d8fe907e",
+          "74cea894-6bac-4df3-ab67-69d31da13983"
+        ],
+        "isRemovable": true,
+        "filePath": "ksubi"
+      },
+      "a822a273-5288-48bb-920d-fe85d8fe907e": {
+        "id": "a822a273-5288-48bb-920d-fe85d8fe907e",
+        "parent": "33d04280-26c7-4c6c-ad73-d58b0d057e45",
+        "name": "lamdainsub.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ksubi/lamdainsub.py",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 256,
+          "layers": [],
+          "name": "lamdainsub"
+        },
+        "triggers": [
+          {
+            "resourceName": "alexaSK15970ba19cb64f6f9b22e6d5710707f0",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1627911416241
+      },
+      "74cea894-6bac-4df3-ab67-69d31da13983": {
+        "id": "74cea894-6bac-4df3-ab67-69d31da13983",
+        "parent": "33d04280-26c7-4c6c-ad73-d58b0d057e45",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ksubi/__init__.py"
+      }
+    },
+    "openFiles": [
+      "ae8a7a56-1974-4b27-b7bb-92cea84dc1a1",
+      "a822a273-5288-48bb-920d-fe85d8fe907e"
+    ],
+    "currentFileId": "a822a273-5288-48bb-920d-fe85d8fe907e",
+    "resources": {
+      "s3cloud9Ktest": {
+        "name": "s3cloud9Ktest",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "cloud9-ktest"
+          }
+        }
+      },
+      "sqsKTestSQS": {
+        "name": "sqsKTestSQS",
+        "type": "SQS",
+        "config": {
+          "mode": 1,
+          "existing": true,
+          "name": "KTestSQS",
+          "url": "https://sqs.us-east-1.amazonaws.com/318300609668/KTestSQS",
+          "deliveryDelay": "0",
+          "deliveryDelayUnit": "seconds",
+          "queueType": "standardQueue",
+          "defaultVisibilityTimeout": "30",
+          "defaultVisibilityTimeoutUnit": "seconds",
+          "messageRetentionPeriod": "345600",
+          "messageRetentionPeriodUnit": "seconds",
+          "maximumMessageSize": 256,
+          "receiveMessageWaitTime": "0",
+          "queueARN": "arn:aws:sqs:us-east-1:318300609668:KTestSQS"
+        }
+      },
+      "translateResource": {
+        "name": "translateResource",
+        "type": "Translate",
+        "config": {}
+      },
+      "apigTestAPIDDBresourcecheckany": {
+        "name": "apigTestAPIDDBresourcecheckany",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/DDBresource": "0aenia",
+            "/DDBresource/check": "70q21i",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/DDBresource/check",
+          "resourceName": "DDBresource/check",
+          "resourceId": "70q21i",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "socks",
+          "stageDeploymentId": "s1zwmn",
+          "mode": 1
+        }
+      },
+      "apigTestAPIDDBresourceget": {
+        "name": "apigTestAPIDDBresourceget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/DDBresource": "0aenia",
+            "/DDBresource/check": "70q21i",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/DDBresource",
+          "resourceName": "DDBresource",
+          "resourceId": "0aenia",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "prod1",
+          "stageDeploymentId": "oht9oc",
+          "mode": 1
+        }
+      },
+      "apigTestAPIDDBresourcecheckget": {
+        "name": "apigTestAPIDDBresourcecheckget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/DDBresource": "0aenia",
+            "/DDBresource/check": "70q21i",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/DDBresource/check",
+          "resourceName": "DDBresource/check",
+          "resourceId": "70q21i",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 1,
+          "stageName": "prod2",
+          "stageDeploymentId": "mxvarc",
+          "mode": 1
+        }
+      },
+      "ddbKChineseAnimal": {
+        "name": "ddbKChineseAnimal",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:318300609668:table/KChineseAnimal",
+            "name": "KChineseAnimal",
+            "partitionKey": "BirthYear",
+            "partitionKeyType": "N",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      },
+      "snsNotifications": {
+        "name": "snsNotifications",
+        "type": "SNS",
+        "config": {
+          "topicMode": 1,
+          "topicName": "Notifications",
+          "topicArn": "arn:aws:sns:us-east-1:318300609668:Notifications",
+          "snsType": 0,
+          "subscriptions": []
+        }
+      },
+      "iotaChannelmychannel": {
+        "name": "iotaChannelmychannel",
+        "type": "IoTAnalytics",
+        "config": {
+          "name": "my_channel",
+          "mode": 1
+        }
+      },
+      "alexaSK15970ba19cb64f6f9b22e6d5710707f0": {
+        "name": "alexaSK15970ba19cb64f6f9b22e6d5710707f0",
+        "type": "ALEXA",
+        "config": {
+          "type": 1,
+          "verifiedID": true,
+          "skillID": "amzn1.ask.skill.15970ba1-9cb6-4f6f-9b22-e6d5710707f0",
+          "applicationID": ""
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "kumu",
+        "varValue": "var1",
+        "shouldPersist": true,
+        "displayOnly": false,
+        "editable": true
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.16.43",
+          "dev": true,
+          "notRemovable": false
+        },
+        "ask_sdk_core": {
+          "name": "ask_sdk_core",
+          "language": "python",
+          "version": "1.13.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "JSON": {
+          "name": "JSON",
+          "version": "1.1.1",
+          "dev": true,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.9.3",
+    "projectName": "kawspy",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1627911486023
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kawspy",
+      "url": "https://github.com/Kumudikatest/kawspy"
+    }
+  }
+}
